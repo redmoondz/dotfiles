@@ -21,7 +21,7 @@
 
 - Clone the repository
 ```
-git clone --bare https://github.com/sameemul-haque/dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/redmoondz/dotfiles.git $HOME/.dotfiles
 ```
 - Install required packages
 ```
