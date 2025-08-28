@@ -1,6 +1,10 @@
 # dotfiles
 
-[![dark-config](https://img.shields.io/badge/dark_config-black?style=for-the-badge "Dark config")](https://github.com/sameemul-haque/dotfiles/tree/dark)
+**English:** This repository contains configuration files (dotfiles) for a modern Linux desktop environment based on Hyprland (Wayland compositor). It includes a complete setup with Waybar, Rofi, Alacritty terminal, Firefox theme, and various other applications for a beautiful and functional desktop experience.
+
+**Русский:** Этот репозиторий содержит конфигурационные файлы (dotfiles) для современной рабочей среды Linux на основе Hyprland (композитор Wayland). Включает полную настройку с Waybar, Rofi, терминалом Alacritty, темой Firefox и различными другими приложениями для красивого и функционального рабочего стола.
+
+[![dark-config](https://img.shields.io/badge/dark_config-black?style=for-the-badge "Dark config")](https://github.com/redmoondz/dotfiles/tree/dark)
 [![blog](https://img.shields.io/badge/BLOG_--_HOW_DO_I_MANAGE_MY_DOTFILES-6270B1?style=for-the-badge&logo=data:image/png;base64,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 "BLOG")](https://sameemul-haque.vercel.app/blog/dotfiles)
 [![buymeacoffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=1B1B1B "Buy me a coffee")](https://buymeacoffee.com/sameemul_haque)
 
@@ -76,14 +80,24 @@ cp -r ~/.sddm-themes/Sugar-Candy/* /usr/share/sddm/themes/sugar-candy/
 | HYPRLAND | WAYBAR | ROFI | DUNST | HYPRLOCK | SWAYLOCK | SDDM | ZATHURA | ALACRITTY | KONSOLE | BASH | NEOVIM | FIREFOX | FASTFETCH |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 
+**What's included / Что включено:**
+- **Hyprland** - Dynamic tiling Wayland compositor / Динамический тайлинговый композитор Wayland
+- **Waybar** - Customizable status bar / Настраиваемая панель состояния  
+- **Rofi** - Application launcher and window switcher / Лаунчер приложений и переключатель окон
+- **Alacritty/Konsole** - Terminal emulators / Эмуляторы терминала
+- **Firefox theme** - Beautiful browser appearance / Красивое оформление браузера
+- **Dunst** - Notification daemon / Демон уведомлений
+- **Hyprlock/Swaylock** - Screen lockers / Блокировщики экрана
+- **SDDM** - Display manager theme / Тема менеджера дисплея
+
 ## Credits
 [![credits](https://img.shields.io/badge/rayh4444n-FF4500?style=for-the-badge&logo=reddit&logoColor=ffffff "Credits to rayh4444n")](https://www.reddit.com/r/unixporn/comments/zos11o/comment/k24i61c/)
 
 ## Star History
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sameemul-haque/dotfiles&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sameemul-haque/dotfiles&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sameemul-haque/dotfiles&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=redmoondz/dotfiles&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=redmoondz/dotfiles&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=redmoondz/dotfiles&type=Date" />
 </picture>
 
 
