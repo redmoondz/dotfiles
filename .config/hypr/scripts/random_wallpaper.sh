@@ -1,6 +1,7 @@
 #!/bin/bash
 WALLPAPER_DIR="$HOME/Pictures/Wallpaper"
 LAST_WALLPAPER="$HOME/.config/hypr/scripts/.last_wallpaper"
+HYPRPAPER_CONF="$HOME/.config/hypr/hyprpaper.conf"
 
 # Create wallpaper dir if not exists
 mkdir -p "$WALLPAPER_DIR"
@@ -43,6 +44,10 @@ hyprctl hyprpaper wallpaper ",$new_wallpaper"
 
 # Save last wallpaper
 echo "$new_wallpaper" > "$LAST_WALLPAPER"
+
+# Update hyprpaper.conf to persist the choice after reboot
+sed -i "s|^preload = .*|preload = $new_wallpaper|" "$HYPRPAPER_CONF"
+sed -i "s|^wallpaper = ,.*|wallpaper = ,$new_wallpaper|" "$HYPRPAPER_CONF"
 
 # Send notification
 wallpaper_name=$(basename "$new_wallpaper")
