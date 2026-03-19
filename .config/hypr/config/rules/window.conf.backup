@@ -1,0 +1,94 @@
+# ╔═══════════════════════════════════════════════════════════════════╗
+# ║                          Window Rules                            ║
+# ╚═══════════════════════════════════════════════════════════════════╝
+# Rules for specific applications and window types
+
+# ╭─────────────────────────────────────────────────────────────────╮
+# │                        Dialog Windows                          │
+# ╰─────────────────────────────────────────────────────────────────╯
+windowrule = float, class:file_progress
+windowrule = float, class:confirm
+windowrule = float, class:dialog
+windowrule = float, class:download
+windowrule = float, class:notification
+windowrule = float, class:error
+windowrule = float, class:splash
+windowrule = float, class:confirmreset
+windowrule = float, title:Open File
+windowrule = float, title:branchdialog
+
+# ╭─────────────────────────────────────────────────────────────────╮
+# │                      Application Specific                      │
+# ╰─────────────────────────────────────────────────────────────────╯
+# System applications
+windowrule = float, class:Lxappearance
+windowrule = float, class:pavucontrol-qt
+windowrule = float, class:org.gnome.Settings
+windowrule = float, class:gucharmap
+windowrule = float, class:gnome-font
+
+# File managers
+windowrule = float, class:file-roller
+windowrule = float, class:nautilus
+windowrule = float, class:nemo
+windowrule = float, class:thunar
+windowrule = float, class:Pcmanfm
+
+# Media applications
+windowrule = float, class:ncmpcpp
+windowrule = float, class:viewnior
+windowrule = float, class:zathura
+
+# Rofi launcher
+windowrule = float, class:Rofi
+windowrule = animation none, class:Rofi
+
+# Zoom meetings
+windowrule = float, class:zoom
+
+# Display management
+windowrule = float, class:wdisplays
+
+# Windows executables
+windowrule = float, class:*.exe
+
+# Logout manager
+windowrule = fullscreen, class:wlogout
+windowrule = float, title:wlogout
+windowrule = fullscreen, title:wlogout
+
+# Password manager
+windowrule = float, class:keepassxc
+
+# ╭─────────────────────────────────────────────────────────────────╮
+# │                      Media & Performance                       │
+# ╰─────────────────────────────────────────────────────────────────╯
+# Prevent idle when watching videos
+windowrule = idleinhibit focus, class:mpv
+windowrule = idleinhibit fullscreen, class:firefox
+
+# ╭─────────────────────────────────────────────────────────────────╮
+# │                      Firefox Specific                          │
+# ╰─────────────────────────────────────────────────────────────────╯
+windowrule = float, title:^(Media viewer)$
+windowrule = float, title:^(Volume Control)$
+windowrule = float, title:^(Picture-in-Picture)$
+windowrule = float, title:^(Firefox — Sharing Indicator)$
+windowrule = move 0 0, title:^(Firefox — Sharing Indicator)$
+windowrule = size 800 600, title:^(Volume Control)$
+windowrule = move 75 44%, title:^(Volume Control)$
+
+# ╭─────────────────────────────────────────────────────────────────╮
+# │                      JetBrains IDEs                            │
+# ╰─────────────────────────────────────────────────────────────────╯
+windowrulev2 = nofocus, class:^jetbrains-(?!toolbox), floating:1, title:^win\d+$
+
+# ╭─────────────────────────────────────────────────────────────────╮
+# │                      Window Rule v2                            │
+# ╰─────────────────────────────────────────────────────────────────╯
+windowrulev2 = float, class:floating
+
+# ╭─────────────────────────────────────────────────────────────────╮
+# │                        Transmission                            │
+# ╰─────────────────────────────────────────────────────────────────╯
+windowrule = float, title:^(Transmission)$
