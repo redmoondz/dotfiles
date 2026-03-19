@@ -16,12 +16,12 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd",//"custom/l_end","cpu","memory","custom/cpuinfo","custom/gpuinfo","custom/r_end",//
-    "custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
+	"modules-left": ["custom/padd", "custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
 	"modules-center": ["custom/padd","custom/l_end","cpu","memory","custom/cpuinfo","custom/gpuinfo","custom/r_end","custom/padd"],
 	"modules-right": [
-    "tray", "custom/l_end","network","bluetooth","pulseaudio","custom/r_end","custom/l_end","battery","backlight","custom/r_end","custom/l_end","idle_inhibitor","clock","custom/r_end"
-    // ,"custom/padd","custom/launcher","custom/padd","custom/padd"
+    "tray", "custom/l_end","network","bluetooth","pulseaudio","custom/r_end",
+    // "custom/l_end","battery","backlight","custom/r_end",
+    "custom/l_end","idle_inhibitor","clock","custom/r_end"
     ],
 
 
@@ -51,7 +51,7 @@
         "h": 60, // high
         "m": 30, // medium
     },
-    "interval": 30,
+    "interval": 15,
     "format": "󰾆 {used}GB",
     "rotate": 0,
     "format-m": "󰾅 {used}GB",
