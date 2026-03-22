@@ -21,7 +21,7 @@
 	"modules-right": [
     "tray", "custom/l_end","network","bluetooth","pulseaudio","custom/r_end",
     // "custom/l_end","battery","backlight","custom/r_end",
-    "custom/l_end","idle_inhibitor","clock","custom/r_end"
+    "custom/l_end","idle_inhibitor","custom/voxtype","clock","custom/r_end"
     ],
 
 
@@ -320,6 +320,20 @@
     "format": " ",
     "interval" : "once",
     "tooltip": false
+},
+
+"custom/voxtype": {
+    "exec": "voxtype status --follow --format json",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+        "idle": "\uf130",
+        "recording": "\uf111",
+        "transcribing": "\uf110",
+        "stopped": "\uf131"
+    },
+    "tooltip": true,
+    "on-click": "systemctl --user restart voxtype"
 }
 
 }
