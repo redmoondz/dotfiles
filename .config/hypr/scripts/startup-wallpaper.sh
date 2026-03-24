@@ -1,7 +1,7 @@
 #!/bin/bash
 # Startup wallpaper script - loads last wallpaper on boot
 
-WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+WALLPAPER_DIR="$HOME/Pictures/Wallpaper"
 LAST_WALLPAPER="$HOME/.config/hypr/scripts/.last_wallpaper"
 HYPRPAPER_CONF="$HOME/.config/hypr/hyprpaper.conf"
 

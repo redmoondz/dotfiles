@@ -18,8 +18,3 @@ set echo-control-characters off
 # Move foreward/backward by word
 "\e[1;5D": backward-word
 "\e[1;5C": forward-word
-
-
-# Bash Keybindings
-"\C-f":"cd ~/.config/"
-"\C-g":"cd ~/github-projects"

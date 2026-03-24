@@ -1,7 +1,10 @@
     "mpris": {
-        "format": "{player_icon} {dynamic}",
+        "format": "<span>⏮</span> <span>⏯</span> <span>⏭</span> {dynamic}",
+        "format-paused": "<span>⏮</span> <span>⏯</span> <span>⏭</span> <i>{dynamic}</i>",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-click-middle": "playerctl previous",
         "rotate": ${r_deg},
-        "format-paused": "{status_icon} <i>{dynamic}</i>",
         "player-icons": { 
             "default": "▶",
             "mpv": "🎵"

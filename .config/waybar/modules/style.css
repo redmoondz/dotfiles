@@ -1,3 +1,7 @@
+/* NVIDIA green for GPU/VRAM module */
+#custom-gpuvram, .modules-center #custom-gpuvram {
+    color: #76B900;
+}
 * {
     border: none;
     border-radius: 0px;

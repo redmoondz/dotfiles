@@ -1,0 +1,7 @@
+    "custom/gpuvram": {
+        "exec": "${ScrDir}/gpuvram.sh",
+        "return-type": "json",
+        "interval": 5,
+        "tooltip": true,
+        "max-length": 1000
+    },

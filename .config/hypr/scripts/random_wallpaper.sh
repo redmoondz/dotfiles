@@ -1,5 +1,5 @@
 #!/bin/bash
-WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+WALLPAPER_DIR="$HOME/Pictures/Wallpaper"
 LAST_WALLPAPER="$HOME/.config/hypr/scripts/.last_wallpaper"
 HYPRPAPER_CONF="$HOME/.config/hypr/hyprpaper.conf"
 

@@ -16,14 +16,42 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd", "custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
-	"modules-center": ["custom/padd","custom/l_end","cpu","memory","custom/cpuinfo","custom/gpuinfo","custom/r_end","custom/padd"],
-	"modules-right": [
-    "tray", "custom/l_end","network","bluetooth","pulseaudio","custom/r_end",
-    // "custom/l_end","battery","backlight","custom/r_end",
-    "custom/l_end","idle_inhibitor","custom/voxtype","clock","custom/r_end"
+	"modules-left": [
+        "custom/padd",
+        "custom/l_end",
+        "hyprland/workspaces",
+        // "mpris",
+        "custom/r_end",
+        "custom/padd"
     ],
-
+    "modules-center": [
+        "custom/padd",
+        "custom/l_end",
+        "cpu",
+        "custom/padd",
+        "memory",
+        "custom/padd",
+        "custom/gpuvram",
+        "custom/padd",
+        // "custom/cpuinfo","custom/padd",
+        // "custom/gpuinfo",
+        "custom/r_end",
+        "custom/padd"
+    ],
+	"modules-right": [
+        "tray",
+        "custom/l_end",
+        "network",
+        "bluetooth",
+        "pulseaudio",
+        "custom/voxtype",
+        "custom/r_end",
+        // "custom/l_end","battery","backlight","custom/r_end",
+        "custom/l_end",
+        "idle_inhibitor",
+        "clock",
+        "custom/r_end"
+    ],
 
 // sourced from modules based on config.ctl //
 
@@ -82,6 +110,14 @@
     "tooltip": true,
     "max-length": 1000,
     "on-click": "/home/kyokino/.config/hyprdots/scripts/gpuinfo.sh --toggle",
+},
+
+"custom/gpuvram": {
+    "exec": "${HOME}/.config/waybar/scripts/gpuvram.sh",
+    "return-type": "json",
+    "interval": 5,
+    "tooltip": true,
+    "max-length": 1000
 },
 
 "custom/gpuinfo#nvidia": {
