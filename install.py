@@ -8,6 +8,7 @@ install.py — установщик dotfiles redmoondz одной командо
 """
 
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -313,6 +314,19 @@ def step_setup_voxtype() -> None:
             except Exception as e:
                 error(f"Ошибка скачивания: {e}")
                 info(f"Скачайте вручную:\n    wget -O {model_path} {model_info['url']}")
+
+        # Обновить config.toml с выбранной моделью
+        voxtype_config = CONFIG_DIR / "voxtype" / "config.toml"
+        if voxtype_config.exists():
+            config_text = voxtype_config.read_text()
+            config_text = re.sub(
+                r'^model\s*=\s*"[^"]*"',
+                f'model = "{model_name}"',
+                config_text,
+                flags=re.MULTILINE,
+            )
+            voxtype_config.write_text(config_text)
+            ok(f"config.toml обновлён: model = \"{model_name}\"")
 
     # Активировать systemd сервис
     result = run(

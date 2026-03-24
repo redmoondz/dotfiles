@@ -110,3 +110,4 @@ bindkey '^[[B' history-substring-search-down
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 fastfetch
+export PATH="$HOME/.local/bin:$PATH"
