@@ -70,7 +70,7 @@ Checkout the `main` branch and adjust Hyprland keybindings in `.config/hypr/conf
 
 Push-to-talk voice input using local Whisper AI — works offline.
 
-- **Hotkey:** `ScrollLock` (hold to record, release to transcribe)
+- **Hotkey:** `Alt+M` (hold to record, release to transcribe)
 - **Languages:** English + Russian (large-v3-turbo model)
 - **Output:** Types text directly at cursor position
 - **Config:** `~/.config/voxtype/config.toml`
@@ -119,9 +119,6 @@ python3 sync_configs.py --no-push    # sync without pushing
 ## Dotfiles are available for the following:
 | HYPRLAND | WAYBAR | ROFI | DUNST | HYPRLOCK | SWAYLOCK | ZATHURA | ALACRITTY | KONSOLE | NEOVIM | FASTFETCH | VOXTYPE |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-
-## Credits
-[![credits](https://img.shields.io/badge/rayh4444n-FF4500?style=for-the-badge&logo=reddit&logoColor=ffffff "Credits to rayh4444n")](https://www.reddit.com/r/unixporn/comments/zos11o/comment/k24i61c/)
 
 ## Star History
 <picture>
