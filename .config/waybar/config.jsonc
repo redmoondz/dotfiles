@@ -216,6 +216,7 @@
     "rotate": 0,
     "format-muted": "婢",
     "on-click": "pavucontrol -t 3",
+    "on-click-right": "/home/rdmoon/.config/waybar/scripts/select-sink.sh",
     "on-click-middle": "/home/kyokino/.config/hyprdots/scripts/volumecontrol.sh -o m",
     "on-scroll-up": "/home/kyokino/.config/hyprdots/scripts/volumecontrol.sh -o i",
     "on-scroll-down": "/home/kyokino/.config/hyprdots/scripts/volumecontrol.sh -o d",
