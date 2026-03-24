@@ -70,7 +70,7 @@ Checkout the `main` branch and adjust Hyprland keybindings in `.config/hypr/conf
 
 Push-to-talk voice input using local Whisper AI — works offline.
 
-- **Hotkey:** `Alt+M` (hold to record, release to transcribe)
+- **Hotkey:** `ScrollLock` (hold to record, release to transcribe)
 - **Languages:** English + Russian (large-v3-turbo model)
 - **Output:** Types text directly at cursor position
 - **Config:** `~/.config/voxtype/config.toml`
