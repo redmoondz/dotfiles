@@ -1,0 +1,17 @@
+[Presets]
+lastLoadedOutputPreset=Perfect EQ
+
+[StreamInputs]
+inputDevice=alsa_input.usb-MV-SILICON_fifine_Microphone_20190808-00.mono-fallback
+
+[StreamOutputs]
+mostUsedPresets=Perfect EQ,Loudness+Autogain,Advanced Auto Gain,Bass Boosted,Bass Enhancing + Perfect EQ - Low Latency
+outputDevice=bluez_output.78:2A:48:BF:47:49
+plugins=equalizer#0
+usedPresets=Perfect EQ:4,Bass Enhancing + Perfect EQ - Low Latency:1,Bass Boosted:1,Loudness+Autogain:2,Advanced Auto Gain:1
+visiblePlugin=equalizer#0
+
+[Window]
+height=1022
+visiblePipeWirePage=modulesPage
+width=948
