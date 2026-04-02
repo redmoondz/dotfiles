@@ -3,7 +3,7 @@
     follow = none
     width = 300
     height = 130
-    origin = top-center
+    origin = top-right
     alignment = "left"
     vertical_alignment = "center"
     ellipsize = "middle"
@@ -60,16 +60,16 @@
     background = "#11111b"
     foreground = "#cdd6f4"
     highlight = "#cba6f7"
-    timeout = 4
+    timeout = 2
 
 [urgency_normal]
     background = "#11111b"
     foreground = "#cdd6f4"
     highlight = "#cba6f7"
-    timeout = 6
+    timeout = 4
 
 [urgency_critical]
     background = "#11111b"
     foreground = "#cdd6f4"
     highlight = "#cba6f7"
-    timeout = 0
+    timeout = 10

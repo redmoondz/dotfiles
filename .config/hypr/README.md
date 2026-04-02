@@ -6,39 +6,25 @@ This configuration follows best practices for modular Hyprland ricing setups.
 
 ```
 ~/.config/hypr/
-├── hyprland.conf              # Main entry point (sources all other configs)
-├── hyprland.conf.backup       # Backup of original configuration
-├── config/                    # Modular configuration files
-│   ├── system/               # System-level configuration
-│   │   ├── monitors.conf     # Monitor setup and positioning
-│   │   ├── environment.conf  # Environment variables
-│   │   └── autostart.conf    # Applications started with Hyprland
-│   ├── input/                # Input device configuration
-│   │   ├── keyboard.conf     # Keyboard layouts and settings
-│   │   └── mouse.conf        # Mouse and touchpad settings
-│   ├── visual/               # Visual appearance
-│   │   ├── general.conf      # Gaps, borders, layout settings
-│   │   ├── decoration.conf   # Rounding, blur, shadows, transparency
-│   │   └── animations.conf   # Animation configurations
-│   ├── layouts/              # Layout-specific settings
-│   │   ├── dwindle.conf      # Dwindle layout configuration
-│   │   └── master.conf       # Master layout configuration
-│   ├── rules/                # Window and workspace rules
-│   │   ├── window.conf       # Window rules for applications
-│   │   └── workspace.conf    # Workspace assignment rules
-│   └── binds/                # Keybind configurations
-│       ├── main.conf         # Core window management binds
-│       ├── media.conf        # Volume, brightness, media controls
-│       ├── applications.conf # Application launchers
-│       ├── workspaces.conf   # Workspace switching and movement
-│       └── system.conf       # System commands (lock, logout, etc.)
-├── scripts/                  # Utility scripts
-│   ├── nogaps.sh            # Toggle gaps script
-│   ├── random_wallpaper.sh  # Random wallpaper selector
-│   └── reload.sh            # Reload Hyprland configuration
-├── hypridle.conf            # Idle management configuration
-├── hyprlock.conf            # Lock screen configuration
-└── hyprpaper.conf           # Wallpaper configuration
+├── hyprland.conf           # Main entry point (sources all other configs)
+├── hyprland.conf.backup    # Backup of original configuration
+├── config/                 # Configuration files (flat structure)
+│   ├── binds.conf          # Keybinds
+│   ├── input.conf          # Input device settings
+│   ├── layouts.conf        # Layout settings
+│   ├── rules.conf          # Window/workspace rules
+│   ├── system.conf         # System-level config
+│   └── visual.conf         # Visual appearance
+├── scripts/                # Utility scripts
+│   ├── .last_wallpaper     # Last wallpaper used (state file)
+│   ├── 80hz.sh             # 80Hz refresh script
+│   ├── nogaps.sh           # Toggle gaps script
+│   ├── random_wallpaper.sh # Random wallpaper selector
+│   ├── reload.sh           # Reload Hyprland configuration
+│   └── startup-wallpaper.sh# Set wallpaper on startup
+├── hypridle.conf           # Idle management configuration
+├── hyprlock.conf           # Lock screen configuration
+└── hyprpaper.conf          # Wallpaper configuration
 ```
 
 ## 🎯 Benefits of This Structure
@@ -49,7 +35,7 @@ This configuration follows best practices for modular Hyprland ricing setups.
 - Simplified troubleshooting and maintenance
 
 ### **Organization**
-- Logical grouping by functionality
+- Flat config structure for simplicity
 - Clear naming conventions
 - Self-documenting structure
 
@@ -59,9 +45,8 @@ This configuration follows best practices for modular Hyprland ricing setups.
 - Better version control support
 
 ### **Extensibility**
-- Easy to add new configuration categories
+- Easy to add new configuration files
 - Simple to override specific settings
-- Support for environment-specific configs
 
 ## 🚀 Usage
 
@@ -75,20 +60,13 @@ The main `hyprland.conf` file serves as the entry point and sources all other co
 ## 🔧 Customization
 
 ### Adding New Keybinds
-Add them to the appropriate file in `config/binds/`:
-- Window management → `main.conf`
-- Applications → `applications.conf`
-- Media controls → `media.conf`
-- System functions → `system.conf`
+Add them to `config/binds.conf`.
 
 ### Modifying Appearance
-Edit files in `config/visual/`:
-- Colors and borders → `general.conf`
-- Window effects → `decoration.conf`
-- Transitions → `animations.conf`
+Edit `config/visual.conf` for visual settings.
 
 ### Window Rules
-Add application-specific rules to `config/rules/window.conf`
+Add rules to `config/rules.conf`.
 
 ## 📋 Migration Notes
 
