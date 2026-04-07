@@ -119,7 +119,9 @@
     "return-type": "json",
     "interval": 5,
     "tooltip": true,
-    "max-length": 1000
+    "max-length": 1000,
+    "on-click": "${HOME}/.config/waybar/scripts/gpuvram.sh --toggle",
+    "signal": 7
 },
 
 "custom/gpuinfo#nvidia": {
