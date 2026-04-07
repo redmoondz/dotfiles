@@ -137,6 +137,8 @@ tooltip {
 #custom-voxtype,
 #window,
 #workspaces,
+#custom-gpuvram,
+#custom-theme-toggle,
 #custom-l_end,
 #custom-r_end,
 #custom-sl_end,
@@ -153,7 +155,7 @@ tooltip {
 }
 
 #custom-weather {
-    color: #8a909e;
+    color: #7690d7;
   }
   
   #custom-weather.severe {

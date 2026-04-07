@@ -28,29 +28,28 @@
         "custom/padd",
         "custom/l_end",
         "cpu",
-        "custom/padd",
         "memory",
-        "custom/padd",
         "custom/gpuvram",
-        "custom/padd",
-        // "custom/cpuinfo","custom/padd",
-        // "custom/gpuinfo",
-        "custom/r_end",
-        "custom/padd"
+        "custom/r_end"
     ],
 	"modules-right": [
+        "custom/l_end",
         "tray",
+        "custom/r_end",
         "custom/l_end",
         "network",
         "bluetooth",
         "pulseaudio",
         "custom/voxtype",
         "custom/r_end",
-        // "custom/l_end","battery","backlight","custom/r_end",
+        // "custom/l_end","battery","backlight","custom/r_end", //stuff for laptop
         "custom/l_end",
         "custom/theme-toggle",
-        "custom/padd",
-        "idle_inhibitor",
+        "custom/weather",
+        "custom/r_end",
+        "custom/l_end",
+        // "custom/padd",
+        // "idle_inhibitor",
         "clock",
         "custom/r_end"
     ],
@@ -60,11 +59,11 @@
 "custom/weather": {
     "exec": "python ~/.config/waybar/scripts/Weather.py",
     "restart-interval": 300,
-    "return-type": "json",
+    "return-type": "json"
 },  
 "custom/launcher": {
     "format": "󰋄",
-    "on-click": "rofi -show drun &",
+    "on-click": "rofi -show drun &"
 },
 
 "cpu": {
@@ -131,7 +130,7 @@
     "rotate": 0,
     "interval": 5, // once every 5 seconds
     "tooltip": true,
-    "max-length": 1000,
+    "max-length": 1000
 },
 
 "custom/gpuinfo#amd": {
@@ -141,7 +140,7 @@
     "rotate": 0,
     "interval": 5, // once every 5 seconds
     "tooltip": true,
-    "max-length": 1000,
+    "max-length": 1000
 },
 
 "custom/gpuinfo#intel": {
@@ -151,14 +150,14 @@
     "rotate": 0,
     "interval": 5, // once every 5 seconds
     "tooltip": true,
-    "max-length": 1000,
+    "max-length": 1000
 },
 
 "hyprland/workspaces": {
     "format" : "{icon}",
     "format-icons": {
        "active" : "󱨇",
-       "default":"",
+       "default":""
         
     },
     "disable-scroll": true,
@@ -167,7 +166,7 @@
     "active-only": false,
     "on-click": "activate",
     "persistent-workspaces": {
-        "*": 3,
+        "*": 3
     }
 },
 
@@ -178,11 +177,11 @@
     "rotate": 0,
     "on-click": "/home/kyokino/.config/hyprdots/scripts/systemupdate.sh up",
     "interval": 86400, // once every day
-    "tooltip": true,
+    "tooltip": true
 },
 
 "tray": {
-    "icon-size": 18,
+    "icon-size": 15,
     "rotate": 0,
     "spacing": 5
 },
@@ -197,7 +196,7 @@
     "format-disconnected": "󰖪 ",
     "tooltip-format-disconnected": "Disconnected",
     "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
-    "interval": 2,
+    "interval": 2
 },
 
 "bluetooth": {
@@ -385,6 +384,15 @@
     },
     "tooltip": true,
     "on-click": "systemctl --user restart voxtype"
+},
+
+"custom/language": {
+    "exec": "hyprctl devices -j | jq -r '.keyboards[] | select(.name | test(\"keyboard\")) | .active_keymap' | head -1",
+    "format": "󰌌 {}",
+    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
+    "interval": 1,
+    "return-type": "json",
+    "tooltip": true
 }
 
 }
