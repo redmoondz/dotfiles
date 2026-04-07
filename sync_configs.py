@@ -38,7 +38,6 @@ CONFIG_DIRS = [
 # ── Отдельные файлы из HOME ───────────────────────────────────────────────────
 HOME_FILES = [
     ".zshrc",
-    ".bashrc",
     ".dir_colors",
     ".inputrc",
 ]

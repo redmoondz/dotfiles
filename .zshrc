@@ -70,7 +70,42 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search)
+plugins=(
+  #Version control
+  git 
+  # Cloud & Infrastructure
+  docker
+  docker-compose
+  kubectl
+  helm
+  terraform
+  aws
+  gcloud
+  azure
+  ansible
+
+  # Programming Languages & Tools
+  python
+  pip
+  node
+  npm
+  yarn
+  golang
+  rust
+
+  # Productivity Boosters
+  sudo              # Press ESC twice to add sudo to previous command
+  extract           # Universal archive extractor (works with .tar, .zip, .gz, etc.)
+  z                 # Jump to frequently used directories
+  history           # Enhanced history commands
+  command-not-found # Suggests package to install for missing commands
+  vscode            # VS Code aliases and shortcuts
+
+  # Community Plugins
+  zsh-autosuggestions
+  zsh-syntax-highlighting 
+  zsh-history-substring-search
+)
 
 source $ZSH/oh-my-zsh.sh
 
