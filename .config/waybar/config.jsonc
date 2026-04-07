@@ -48,6 +48,8 @@
         "custom/r_end",
         // "custom/l_end","battery","backlight","custom/r_end",
         "custom/l_end",
+        "custom/theme-toggle",
+        "custom/padd",
         "idle_inhibitor",
         "clock",
         "custom/r_end"
@@ -302,6 +304,16 @@
         "on-scroll-up": "shift_up",
         "on-scroll-down": "shift_down"
     }
+},
+
+"custom/theme-toggle": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/theme-toggle.sh",
+    "on-click": "~/.config/waybar/scripts/theme-toggle.sh --toggle",
+    "interval": 2,
+    "return-type": "json",
+    "signal": 8,
+    "tooltip": true
 },
 
 "custom/power": {

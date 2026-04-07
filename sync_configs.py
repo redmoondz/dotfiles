@@ -106,7 +106,7 @@ def sync_home_files(dry_run: bool) -> None:
 
 def sync_wallpapers(dry_run: bool) -> None:
     print(f"\n{CYAN}══ Обои ══{RESET}")
-    src_dir = HOME / "Pictures" / "Wallpapers"
+    src_dir = HOME / "Pictures" / "Wallpaper"
     dst_dir = REPO_ROOT / "Pictures" / "Wallpapers"
 
     if not src_dir.exists():

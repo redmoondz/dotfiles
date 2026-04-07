@@ -205,7 +205,8 @@ tooltip {
 #memory,
 #clock,
 #idle_inhibitor,
-#custom-voxtype{
+#custom-voxtype,
+#custom-theme-toggle{
     color: #DEC386;
 }
 #custom-power{
