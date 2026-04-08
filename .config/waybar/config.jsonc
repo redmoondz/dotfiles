@@ -10,13 +10,11 @@
     "margin-top": 5,
 
     "modules-left": [
-        // "custom/padd",
         "custom/l_end",
         "hyprland/workspaces",
         "custom/spotify",
         "custom/r_end"
-        // "custom/padd"
-    ],
+     ],
     "modules-center": [
         "custom/l_end",
         "cpu",
@@ -25,9 +23,9 @@
         "custom/r_end"
     ],
     "modules-right": [
-        "custom/l_end",
-        "tray",
-        "custom/r_end",
+        // "custom/l_end",
+        // "tray",
+        // "custom/r_end",
         "custom/l_end",
         "network",
         "bluetooth",

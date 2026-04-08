@@ -1,26 +1,24 @@
-/* Waybar color palette — Wall-Dcol (default)
- * Single source of truth for all bar colors.
- * Override with scripts/wallpaper-colors.sh or copy a theme preset here. */
-@define-color color-bg       #1b1e25;
-@define-color color-surface  #242830;
-@define-color color-overlay  #2b2f38;
-@define-color color-muted    #6e6a86;
-@define-color color-text     #ebddbc;
+/* Graphite Mono */
+@define-color color-bg       #1a1a1a;
+@define-color color-surface  #262626;
+@define-color color-overlay  #333333;
+@define-color color-muted    #737373;
+@define-color color-text     #d9d9d9;
 
-@define-color color-accent-1 #DEC386;
-@define-color color-accent-2 #EAB2C2;
-@define-color color-accent-3 #83A6BF;
-@define-color color-accent-4 #B28999;
-@define-color color-accent-5 #D5A5AA;
+@define-color color-accent-1 #d9d9d9;
+@define-color color-accent-2 #a6a6a6;
+@define-color color-accent-3 #8c8c8c;
+@define-color color-accent-4 #737373;
+@define-color color-accent-5 #595959;
 
-@define-color wb-bar-bg     rgba(27, 30, 37, 1);
-@define-color wb-module-bg  #242830;
-@define-color wb-module-fg  #ebddbc;
-@define-color wb-active-bg    #DEC386;
-@define-color wb-active-fg    #1b1e25;
-@define-color wb-inactive-bg  #332e1c;
-@define-color wb-inactive-fg  #8c7d4a;
-@define-color wb-hover-bg     #B28999;
-@define-color wb-hover-fg     #1b1e25;
-@define-color wb-border       #2b2f38;
-@define-color wb-muted        #6e6a86;
+@define-color wb-bar-bg     rgba(38, 38, 38, 1);
+@define-color wb-module-bg  #262626;
+@define-color wb-module-fg  #d9d9d9;
+@define-color wb-active-bg    #d9d9d9;
+@define-color wb-active-fg    #1a1a1a;
+@define-color wb-inactive-bg  #2e2e2e;
+@define-color wb-inactive-fg  #595959;
+@define-color wb-hover-bg     #a6a6a6;
+@define-color wb-hover-fg     #1a1a1a;
+@define-color wb-border       #333333;
+@define-color wb-muted        #737373;

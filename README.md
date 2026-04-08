@@ -95,21 +95,17 @@ python3 sync_configs.py --no-push    # sync without pushing
 
 <!-- ![preview1-old-neofetch](https://github.com/sameemul-haque/dotfiles/assets/110324374/0250fcdc-dd46-4e53-9855-6630b02950fe) -->
 
-| ![preview1](https://github.com/sameemul-haque/dotfiles/assets/110324374/2212607f-9b29-4e76-bac0-4bdc0ac06bbb) |
-| :--------------------------------------------------------------------------------------------------------: |
-| _Hyprland + Waybar + Alacritty + Dunst_ |
+| ![waybar.jpg](./assets/waybar.jpg) |
+| :-------------------------------: |
+| _waybar.jpg_ |
 
-| ![preview2](https://github.com/sameemul-haque/dotfiles/assets/110324374/86560ae3-5113-46f2-823b-60e334c67b14) |
-| :--------------------------------------------------------------------------------------------------------: |
-| _Rofi + Nemo_ |
+| ![waybar-nvim-rofi-alacritty.jpg](./assets/waybar-nvim-rofi-alacritty.jpg) |
+| :-----------------------------------------------: |
+| _waybar nvim rofi alacritty.jpg_ |
 
-| ![hyprlock-preview](https://github.com/user-attachments/assets/5e6a9ee5-98c2-4e37-b9b8-64b8960f2da2) |
-| :--------------------------------------------------------------------------------------------------------: |
-| _Hyprlock_ |
-
-| ![swaylock-preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/4f7f18aa-4337-4f68-871b-42c3986c0379) |
-| :--------------------------------------------------------------------------------------------------------: |
-| _Swaylock_ |
+| ![floating-spotify-alacritty.jpg](./assets/floating-spotify-alacritty.jpg) |
+| :------------------------------------------: |
+| _Floating spotify alacritty.jpg_ |
 
 
 
