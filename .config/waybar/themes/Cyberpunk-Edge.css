@@ -1,10 +1,24 @@
-@define-color bar-bg rgba(0, 0, 0, 1);
+/* Cyberpunk Edge */
+@define-color color-bg       #000000;
+@define-color color-surface  #000000;
+@define-color color-overlay  #111111;
+@define-color color-muted    #444444;
+@define-color color-text     #FFA6C2;
 
-@define-color main-bg #000000;
-@define-color main-fg #FFA6C2;
+@define-color color-accent-1 #FFA6C2;
+@define-color color-accent-2 #FADA16;
+@define-color color-accent-3 #00ffff;
+@define-color color-accent-4 #ff00ff;
+@define-color color-accent-5 #ffffff;
 
-@define-color wb-act-bg #FFA6C2;
-@define-color wb-act-fg #000000;
-
-@define-color wb-hvr-bg #FADA16;
-@define-color wb-hvr-fg #000000;
+@define-color wb-bar-bg     rgba(0, 0, 0, 1);
+@define-color wb-module-bg  #000000;
+@define-color wb-module-fg  #FFA6C2;
+@define-color wb-active-bg    #FFA6C2;
+@define-color wb-active-fg    #000000;
+@define-color wb-inactive-bg  #2e1a20;
+@define-color wb-inactive-fg  #6b3d4e;
+@define-color wb-hover-bg     #FADA16;
+@define-color wb-hover-fg     #000000;
+@define-color wb-border       #111111;
+@define-color wb-muted        #444444;

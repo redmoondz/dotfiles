@@ -1,10 +1,24 @@
-@define-color bar-bg rgba(38, 38, 38, 1);
+/* Graphite Mono */
+@define-color color-bg       #1a1a1a;
+@define-color color-surface  #262626;
+@define-color color-overlay  #333333;
+@define-color color-muted    #737373;
+@define-color color-text     #d9d9d9;
 
-@define-color main-bg #262626;
-@define-color main-fg #d9d9d9;
+@define-color color-accent-1 #d9d9d9;
+@define-color color-accent-2 #a6a6a6;
+@define-color color-accent-3 #8c8c8c;
+@define-color color-accent-4 #737373;
+@define-color color-accent-5 #595959;
 
-@define-color wb-act-bg #d9d9d9;
-@define-color wb-act-fg #262626;
-
-@define-color wb-hvr-bg #a6a6a6;
-@define-color wb-hvr-fg #262626;
+@define-color wb-bar-bg     rgba(38, 38, 38, 1);
+@define-color wb-module-bg  #262626;
+@define-color wb-module-fg  #d9d9d9;
+@define-color wb-active-bg    #d9d9d9;
+@define-color wb-active-fg    #1a1a1a;
+@define-color wb-inactive-bg  #2e2e2e;
+@define-color wb-inactive-fg  #595959;
+@define-color wb-hover-bg     #a6a6a6;
+@define-color wb-hover-fg     #1a1a1a;
+@define-color wb-border       #333333;
+@define-color wb-muted        #737373;

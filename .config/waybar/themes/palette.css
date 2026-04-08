@@ -1,4 +1,6 @@
-/* Wall-Dcol — warm dark palette (default) */
+/* Waybar color palette — Wall-Dcol (default)
+ * Single source of truth for all bar colors.
+ * Override with scripts/wallpaper-colors.sh or copy a theme preset here. */
 @define-color color-bg       #1b1e25;
 @define-color color-surface  #242830;
 @define-color color-overlay  #2b2f38;

@@ -1,10 +1,24 @@
-@define-color bar-bg rgba(0, 0, 0, 0);
+/* Material Sakura — light theme */
+@define-color color-bg       #faf4ed;
+@define-color color-surface  #fffaf3;
+@define-color color-overlay  #f2e9e1;
+@define-color color-muted    #9893a5;
+@define-color color-text     #575279;
 
-@define-color main-bg #faf4ed;
-@define-color main-fg #907aa9;
+@define-color color-accent-1 #b4637a;
+@define-color color-accent-2 #56949f;
+@define-color color-accent-3 #d7827a;
+@define-color color-accent-4 #907aa9;
+@define-color color-accent-5 #286983;
 
-@define-color wb-act-bg #b4637a;
-@define-color wb-act-fg #fffaf3;
-
-@define-color wb-hvr-bg #56949f;
-@define-color wb-hvr-fg #fffaf3;
+@define-color wb-bar-bg     rgba(0, 0, 0, 0);
+@define-color wb-module-bg  #fffaf3;
+@define-color wb-module-fg  #575279;
+@define-color wb-active-bg    #b4637a;
+@define-color wb-active-fg    #fffaf3;
+@define-color wb-inactive-bg  #e8d5da;
+@define-color wb-inactive-fg  #9e6070;
+@define-color wb-hover-bg     #56949f;
+@define-color wb-hover-fg     #fffaf3;
+@define-color wb-border       #f2e9e1;
+@define-color wb-muted        #9893a5;

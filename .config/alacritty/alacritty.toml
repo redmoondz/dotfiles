@@ -1,31 +1,129 @@
-[colors.primary]
-foreground = "#eaeaea"
-background = "#2c323b"
+[[colors.indexed_colors]]
+color = "#FAB387"
+index = 16
 
-[colors.cursor]
-text = "#2c323b"
-cursor = "#eaeaea"
-
-[colors.selection]
-text = "#2c323b"
-background = "#eaeaea"
-
-[colors.normal]
-black = "#242a32"
-red = "#d54e53"
-green = "#98c379"
-yellow = "#e5c07b"
-blue = "#83a598"
-magenta = "#c678dd"
-cyan = "#70c0ba"
-white = "#eaeaea"
+[[colors.indexed_colors]]
+color = "#F5E0DC"
+index = 17
 
 [colors.bright]
-black = "#666666"
-red = "#ec3e45"
-green = "#90c966"
-yellow = "#edbf69"
-blue = "#73ba9f"
-magenta = "#c858e9"
-cyan = "#2bcec2"
-white = "#ffffff"
+black = "#585B70"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#A6ADC8"
+yellow = "#F9E2AF"
+
+[colors.cursor]
+cursor = "#F5E0DC"
+text = "#1E1E2E"
+
+[colors.dim]
+black = "#45475A"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#BAC2DE"
+yellow = "#F9E2AF"
+
+[colors.hints.end]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[colors.hints.start]
+background = "#F9E2AF"
+foreground = "#1E1E2E"
+
+[colors.normal]
+black = "#45475A"
+blue = "#89B4FA"
+cyan = "#94E2D5"
+green = "#A6E3A1"
+magenta = "#F5C2E7"
+red = "#F38BA8"
+white = "#BAC2DE"
+yellow = "#F9E2AF"
+
+[colors.primary]
+background = "#1E1E2E"
+bright_foreground = "#CDD6F4"
+dim_foreground = "#CDD6F4"
+foreground = "#CDD6F4"
+
+[colors.search.focused_match]
+background = "#A6E3A1"
+foreground = "#1E1E2E"
+
+# [colors.search.footer_bar]
+# background = "#A6ADC8"
+# foreground = "#1E1E2E"
+
+[colors.search.matches]
+background = "#A6ADC8"
+foreground = "#1E1E2E"
+
+[colors.selection]
+background = "#F5E0DC"
+text = "#1E1E2E"
+
+[colors.vi_mode_cursor]
+cursor = "#B4BEFE"
+text = "#1E1E2E"
+
+[font]
+size = 12
+
+[font.bold]
+family = "FiraCode Nerd Font Propo"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "FiraCode Nerd Font SemBd"
+style = "Italic"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[window]
+decorations = "none"
+
+[window.dimensions]
+columns = 100
+lines = 24
+
+[window.padding]
+x = 20
+y = 20
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ReceiveChar"
+key = "C"
+mods = "Control|Shift"

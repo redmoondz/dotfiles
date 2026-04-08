@@ -1,6 +1,0 @@
-Graphite-Mono.css
-Rose-Pine.css - if change bg for modules
-Wall-Dcol.css
-Cyberpunk-Edge.css - total black
-Material-Sakura.css - if change fonts color, maybe good (on light bg should be choose another dark color)
-Rose-Pine.css - if change bg for modules

@@ -7,97 +7,45 @@
     min-height: 21px;
 }
 
-@import "themes/theme.css";
+@import "themes/palette.css";
 
 window#waybar {
-    background: @bar-bg;
+    background: @wb-bar-bg;
     border-radius: 7px;
 }
 
 tooltip {
-    background: @bar-bg;
-    color: #DEC386;
+    background: @wb-bar-bg;
+    color: @wb-active-bg;
     border-radius: 8px;
     border-width: 0px;
 }
 
+/* Workspaces */
+
 #workspaces button {
     box-shadow: none;
-	text-shadow: none;
-    padding: 0px;
-    border-radius: 8px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 0px;
-    padding-left: 4px;
-    padding-right: 4px;
-    margin-right: 0px;
-    color: #EAB2C2;
-    animation: ws_normal 20s ease-in-out 1;
-}
-
-#workspaces button.persistent{
-    color: #EBDDBC;
+    text-shadow: none;
+    border-radius: 6px;
+    margin: 4px 1px;
+    padding: 0px 8px;
+    color: @wb-inactive-fg;
+    background: @wb-inactive-bg;
+    transition: all 0.15s ease;
 }
 
 #workspaces button.active {
-    /* background: #2B2F38; */
-    color: #EBDDBC;
-    /* margin-left: 1px; 
-    padding-left: 4px;
-    padding-right: 8px;
-    margin-right: 1px; */
-    animation: ws_active 20s ease-in-out 1;
-    /* transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682); */
+    color: @wb-active-fg;
+    background: @wb-active-bg;
+    padding: 0px 10px;
 }
 
-#workspaces button.persistent:nth-child(2){
-    color: #EAB2C2;
+#workspaces button:hover:not(.active) {
+    color: @wb-module-fg;
+    background: @wb-hover-bg;
 }
 
-#workspaces button.persistent:nth-child(3){
-    color: #83A6BF;
-}
-
-#workspaces button:hover {
-    /* background: @wb-hvr-bg; */
-    color: #D5A5AA;
-    animation: ws_hover 20s ease-in-out 1;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#taskbar button {
-    box-shadow: none;
-	text-shadow: none;
-    padding: 0px;
-    border-radius: 8px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 0px;
-    padding-left: 4px;
-    padding-right: 4px;
-    margin-right: 0px;
-    color: @wb-color;
-    animation: tb_normal 20s ease-in-out 1;
-}
-
-#taskbar button.active {
-    background: @wb-act-bg;
-    color: @wb-act-color;
-    margin-left: 2px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-right: 2px;
-    animation: tb_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
-}
-
-#taskbar button:hover {
-    background: @wb-hvr-bg;
-    color: @wb-hvr-color;
-    animation: tb_hover 20s ease-in-out 1;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
-}
+/* Module base style */
 
 #custom-weather,
 #custom-weather.severe,
@@ -110,134 +58,101 @@ tooltip {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default,
-#custom-launcher,
 #backlight,
 #battery,
 #bluetooth,
-#custom-cliphist,
 #clock,
-#custom-cpuinfo,
 #cpu,
-#custom-gpuinfo,
 #idle_inhibitor,
-#custom-keybindhint,
-#language,
 #memory,
 #mpris,
 #network,
-#custom-power,
 #pulseaudio,
 #custom-spotify,
-#taskbar,
-#custom-theme,
 #tray,
-#custom-updates,
-#custom-wallchange,
-#custom-wbar,
 #custom-voxtype,
-#window,
 #workspaces,
 #custom-gpuvram,
 #custom-theme-toggle,
 #custom-l_end,
 #custom-r_end,
-#custom-sl_end,
-#custom-sr_end,
-#custom-rl_end,
-#custom-rr_end {
-    color: @main-fg;
-    background: @main-bg;
+#custom-padd {
+    color: @wb-module-fg;
+    background: @wb-module-bg;
     opacity: 1;
     margin: 6px 0px 6px 0px;
     padding-left: 4px;
     padding-right: 4px;
-    
 }
+
+/* Weather */
 
 #custom-weather {
     color: #7690d7;
-  }
-  
-  #custom-weather.severe {
+}
+
+#custom-weather.severe {
     color: #eb937d;
-  }
-  
-  #custom-weather.sunnyDay {
+}
+
+#custom-weather.sunnyDay {
     color: #c2ca76;
-  }
-  
-  #custom-weather.clearNight {
+}
+
+#custom-weather.clearNight {
     color: #cad3f5;
-  }
-  
-  #custom-weather.cloudyFoggyDay,
-  #custom-weather.cloudyFoggyNight {
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
     color: #c2ddda;
-  }
-  
-  #custom-weather.rainyDay,
-  #custom-weather.rainyNight {
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
     color: #5aaca5;
-  }
-  
-  #custom-weather.showyIcyDay,
-  #custom-weather.snowyIcyNight {
+}
+
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight {
     color: #d6e7e5;
-  }
-  
-  #custom-weather.default {
+}
+
+#custom-weather.default {
     color: #dbd9d8;
-  }
-
-
-#tray menu *{
-  color: #EAB2C2;
 }
 
+/* Tray */
 
+#tray menu * {
+    color: @color-accent-2;
+}
 
-#custom-cpuinfo,
-#custom-gpuinfo,
+/* Per-module colors */
+
 #backlight,
-#battery{
-    color: #83A6BF;
+#battery {
+    color: @color-accent-3;
 }
-#custom-updates,
-#custom-power,
+
 #memory,
 #clock,
 #idle_inhibitor,
 #custom-voxtype,
-#custom-theme-toggle{
-    color: #DEC386;
+#custom-theme-toggle {
+    color: @wb-active-bg;
 }
-#custom-power{
-    padding-right: 8px;
-}
+
 #network,
-#blueooth,
+#bluetooth,
 #pulseaudio,
-#cpu{
-    color: #EAB2C2;
+#cpu {
+    color: @color-accent-2;
 }
 
-#idle_inhibitor{ 
-    padding-right: 14px;
-}
+/* Padding/capsule modules */
 
-#custom-launcher{
-    color:@bar-bg;
-    background: #EAB2C2;
-    padding-right: 15px;
-    font-size: 17px;
-    padding-left: 12px;
-    border-radius: 5px;
-    margin-top: 7.5px;
-    margin-bottom: 7.5px;
-}
-
-#workspaces,
-#taskbar {
+#workspaces {
     padding: 0px;
 }
 
@@ -253,29 +168,7 @@ tooltip {
     padding-left: 0px;
 }
 
-#custom-sr_end {
-    border-radius: 0px;
-    margin-right: 8px;
-    padding-right: 0px;
-}
-
-#custom-sl_end {
-    border-radius: 0px;
-    margin-left: 8px;
-    padding-left: 0px;
-}
-
-#custom-rr_end {
-    border-radius: 0px 7px 7px 0px;
-    margin-right: 8px;
-    padding-right: 0px;
-}
-
-#custom-rl_end {
-    border-radius: 7px 0px 0px 7px;
-    margin-left: 8px;
-    padding-left: 0px;
-}
+/* Voxtype states */
 
 #custom-voxtype {
     padding: 0 10px;
@@ -298,4 +191,25 @@ tooltip {
     color: #6272a4;
 }
 
+/* Animations */
 
+@keyframes ws_normal {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes ws_active {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes ws_hover {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes pulse {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.4; }
+    100% { opacity: 1; }
+}
