@@ -1,0 +1,48 @@
+# Graphite Mono — monochrome dark
+[colors.primary]
+background = "#1a1a1a"
+foreground = "#d9d9d9"
+
+[colors.cursor]
+cursor = "#d9d9d9"
+text = "#1a1a1a"
+
+[colors.selection]
+background = "#d9d9d9"
+text = "#1a1a1a"
+
+[colors.search.matches]
+background = "#595959"
+foreground = "#d9d9d9"
+
+[colors.search.focused_match]
+background = "#a6a6a6"
+foreground = "#1a1a1a"
+
+[colors.hints.start]
+background = "#8c8c8c"
+foreground = "#1a1a1a"
+
+[colors.hints.end]
+background = "#595959"
+foreground = "#d9d9d9"
+
+[colors.normal]
+black = "#262626"
+red = "#b35959"
+green = "#7a997a"
+yellow = "#b3a46e"
+blue = "#7a8c99"
+magenta = "#997a99"
+cyan = "#7a9994"
+white = "#b3b3b3"
+
+[colors.bright]
+black = "#595959"
+red = "#cc7a7a"
+green = "#99b399"
+yellow = "#ccbb88"
+blue = "#99aabb"
+magenta = "#b399b3"
+cyan = "#99b3ad"
+white = "#d9d9d9"

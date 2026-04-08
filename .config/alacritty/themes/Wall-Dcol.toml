@@ -1,0 +1,48 @@
+# Wall-Dcol — warm dark palette
+[colors.primary]
+background = "#1b1e25"
+foreground = "#ebddbc"
+
+[colors.cursor]
+cursor = "#dec386"
+text = "#1b1e25"
+
+[colors.selection]
+background = "#dec386"
+text = "#1b1e25"
+
+[colors.search.matches]
+background = "#2b2f38"
+foreground = "#ebddbc"
+
+[colors.search.focused_match]
+background = "#dec386"
+foreground = "#1b1e25"
+
+[colors.hints.start]
+background = "#dec386"
+foreground = "#1b1e25"
+
+[colors.hints.end]
+background = "#83a6bf"
+foreground = "#1b1e25"
+
+[colors.normal]
+black = "#242830"
+red = "#cc7788"
+green = "#8aab7f"
+yellow = "#dec386"
+blue = "#83a6bf"
+magenta = "#b28999"
+cyan = "#7fbba8"
+white = "#d5cbb5"
+
+[colors.bright]
+black = "#6e6a86"
+red = "#eab2c2"
+green = "#a4c49a"
+yellow = "#edd9a0"
+blue = "#9dbdd4"
+magenta = "#d5a5aa"
+cyan = "#99d1b8"
+white = "#ebddbc"

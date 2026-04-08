@@ -1,0 +1,48 @@
+# Material Sakura — light theme (Rosé Pine Dawn inspired)
+[colors.primary]
+background = "#faf4ed"
+foreground = "#575279"
+
+[colors.cursor]
+cursor = "#575279"
+text = "#faf4ed"
+
+[colors.selection]
+background = "#dfdad9"
+text = "#575279"
+
+[colors.search.matches]
+background = "#f2e9e1"
+foreground = "#575279"
+
+[colors.search.focused_match]
+background = "#b4637a"
+foreground = "#faf4ed"
+
+[colors.hints.start]
+background = "#907aa9"
+foreground = "#faf4ed"
+
+[colors.hints.end]
+background = "#56949f"
+foreground = "#faf4ed"
+
+[colors.normal]
+black = "#f2e9e1"
+red = "#b4637a"
+green = "#286983"
+yellow = "#ea9d34"
+blue = "#56949f"
+magenta = "#907aa9"
+cyan = "#d7827a"
+white = "#575279"
+
+[colors.bright]
+black = "#9893a5"
+red = "#b4637a"
+green = "#286983"
+yellow = "#ea9d34"
+blue = "#56949f"
+magenta = "#907aa9"
+cyan = "#d7827a"
+white = "#26233a"

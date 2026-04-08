@@ -32,6 +32,12 @@ set_theme() {
         cp "$rofi_theme" "$rofi_palette"
     fi
 
+    local alacritty_theme="$HOME/.config/alacritty/themes/$1.toml"
+    local alacritty_palette="$HOME/.config/alacritty/palette.toml"
+    if [[ -f "$alacritty_theme" ]]; then
+        cp "$alacritty_theme" "$alacritty_palette"
+    fi
+
     if pgrep -x "waybar" > /dev/null; then
         pkill waybar
         sleep 0.5
