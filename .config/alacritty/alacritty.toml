@@ -53,22 +53,22 @@ style = "Regular"
 x = 0
 y = 0
 
-[[keyboard.bindings]]
-key = "Return"
-mods = "Shift"
-chars = "\u001B\r"
-
-[[keyboard.bindings]]
-action = "Copy"
-key = "C"
-mods = "Control"
-
-[[keyboard.bindings]]
-action = "Paste"
-key = "V"
-mods = "Control"
-
-[[keyboard.bindings]]
-action = "ReceiveChar"
-key = "C"
-mods = "Control|Shift"
+# [[keyboard.bindings]]
+# key = "Return"
+# mods = "Shift"
+# chars = "\u001B\r"
+#
+# [[keyboard.bindings]]
+# action = "Copy"
+# key = "C"
+# mods = "Control"
+#
+# [[keyboard.bindings]]
+# action = "Paste"
+# key = "V"
+# mods = "Control"
+#
+# [[keyboard.bindings]]
+# action = "ReceiveChar"
+# key = "C"
+# mods = "Control|Shift"

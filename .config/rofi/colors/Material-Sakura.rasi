@@ -1,0 +1,11 @@
+/* Material Sakura — light */
+* {
+    background:     #faf4edFF;
+    background-alt: #fffaf3FF;
+    foreground:     #575279FF;
+    selected:       #b4637aFF;
+    active:         #d7827aFF;
+    urgent:         #56949fFF;
+    border:         #f2e9e1FF;
+    border-alt:     #b4637aFF;
+}

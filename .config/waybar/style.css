@@ -27,17 +27,17 @@ tooltip {
     box-shadow: none;
     text-shadow: none;
     border-radius: 6px;
-    margin: 4px 1px;
-    padding: 0px 8px;
+    margin: 4px 2px;
+    padding: 4px;
+    min-width: 14px;
     color: @wb-inactive-fg;
     background: @wb-inactive-bg;
     transition: all 0.15s ease;
 }
 
 #workspaces button.active {
-    color: @wb-active-fg;
+    color: @wb-inactive-fg;
     background: @wb-active-bg;
-    padding: 0px 10px;
 }
 
 #workspaces button:hover:not(.active) {

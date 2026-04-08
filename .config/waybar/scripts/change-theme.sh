@@ -26,6 +26,12 @@ set_theme() {
 
     cp "$theme_path" "$PALETTE"
 
+    local rofi_theme="$HOME/.config/rofi/colors/$1.rasi"
+    local rofi_palette="$HOME/.config/rofi/colors/palette.rasi"
+    if [[ -f "$rofi_theme" ]]; then
+        cp "$rofi_theme" "$rofi_palette"
+    fi
+
     if pgrep -x "waybar" > /dev/null; then
         pkill waybar
         sleep 0.5

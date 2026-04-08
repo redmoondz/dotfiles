@@ -100,11 +100,7 @@
 },
 
 "hyprland/workspaces": {
-    "format" : "{icon}",
-    "format-icons": {
-       "active" : "󱨇",
-       "default":""
-    },
+    "format" : "{name}",
     "disable-scroll": true,
     "rotate": 0,
     "all-outputs": true,

@@ -1,0 +1,11 @@
+/* Catppuccin Mocha */
+* {
+    background:     #1e1e2eFF;
+    background-alt: #11111bFF;
+    foreground:     #cdd6f4FF;
+    selected:       #a6adc8FF;
+    active:         #89b4faFF;
+    urgent:         #f5c2e7FF;
+    border:         #313244FF;
+    border-alt:     #a6adc8FF;
+}

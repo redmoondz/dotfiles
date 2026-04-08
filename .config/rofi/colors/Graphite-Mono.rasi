@@ -1,0 +1,11 @@
+/* Graphite Mono */
+* {
+    background:     #1a1a1aFF;
+    background-alt: #262626FF;
+    foreground:     #d9d9d9FF;
+    selected:       #d9d9d9FF;
+    active:         #8c8c8cFF;
+    urgent:         #a6a6a6FF;
+    border:         #333333FF;
+    border-alt:     #d9d9d9FF;
+}

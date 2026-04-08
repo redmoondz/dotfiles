@@ -1,0 +1,11 @@
+/* Cyberpunk Edge */
+* {
+    background:     #000000FF;
+    background-alt: #111111FF;
+    foreground:     #FFA6C2FF;
+    selected:       #FFA6C2FF;
+    active:         #00ffffFF;
+    urgent:         #FADA16FF;
+    border:         #111111FF;
+    border-alt:     #FFA6C2FF;
+}

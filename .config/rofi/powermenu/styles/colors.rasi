@@ -7,4 +7,4 @@
  *
  */
 
-@import "nordic"
+@import "~/.config/rofi/colors/palette.rasi"

@@ -1,3 +1,4 @@
+/* Wall-Dcol — warm dark */
 * {
     background:     #1b1e25FF;
     background-alt: #242830FF;
@@ -5,4 +6,6 @@
     selected:       #DEC386FF;
     active:         #83A6BFFF;
     urgent:         #EAB2C2FF;
+    border:         #2b2f38FF;
+    border-alt:     #DEC386FF;
 }
