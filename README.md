@@ -91,13 +91,18 @@ python3 sync_configs.py --no-push    # sync without pushing
 ```
 
 ## Preview
-[preview](https://github.com/sameemul-haque/dotfiles/assets/110324374/3f3ad231-ba5c-42fc-9d01-6466e4550158 "dotfiles preview")
 
-<!-- ![preview1-old-neofetch](https://github.com/sameemul-haque/dotfiles/assets/110324374/0250fcdc-dd46-4e53-9855-6630b02950fe) -->
+| ![Waybar + Power Menu](./assets/waybar-power_menu.jpg) |
+| :----------------------------------------------------: |
+| _Waybar и меню питания (lock / sleep / logout / reboot / shutdown)_ |
 
-| ![waybar.jpg](./assets/waybar.jpg) |
-| :-------------------------------: |
-| _waybar.jpg_ |
+| ![Alacritty + Rofi App Launcher](./assets/alacritty-rofi.jpg) |
+| :-----------------------------------------------------------: |
+| _Alacritty с fastfetch и Rofi лаунчер приложений_ |
+
+| ![Rofi File Explorer + Spotify (floating)](./assets/exporere_rofi-floating_spotify.jpg) |
+| :-------------------------------------------------------------------------------------: |
+| _Rofi файловый менеджер, Spotify в floating-режиме и fastfetch_ |
 
 | ![waybar-nvim-rofi-alacritty.jpg](./assets/waybar-nvim-rofi-alacritty.jpg) |
 | :-----------------------------------------------: |
