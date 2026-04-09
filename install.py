@@ -7,6 +7,8 @@ Usage:
          -o /tmp/install.py && python3 /tmp/install.py
 """
 
+from __future__ import annotations
+
 import os
 import re
 import shutil
@@ -148,6 +150,12 @@ def step_check() -> None:
         sys.exit(1)
     ok(f"User: {os.environ.get('USER', 'unknown')}")
 
+    # git
+    if not command_exists("git"):
+        error("git is not installed. Install it first: sudo pacman -S git")
+        sys.exit(1)
+    ok("git found")
+
 
 # ── Step 1: Install yay ─────────────────────────────────────────────────────────────
 def step_install_yay() -> None:
@@ -182,9 +190,9 @@ def step_choose_install_type() -> str:
     return install_type
 
 
-# ── Step 3-4: Install packages ──────────────────────────────────────────────────────
+# ── Step 4: Install packages ────────────────────────────────────────────────────────
 def step_install_packages(install_type: str) -> None:
-    header(f"Step 3-4: Installing packages ({install_type})")
+    header(f"Step 4: Installing packages ({install_type})")
 
     pacman_file = INSTALL_DIR / "packages" / f"{install_type}_pacman.txt"
     aur_file = INSTALL_DIR / "packages" / f"{install_type}_aur.txt"
@@ -193,8 +201,26 @@ def step_install_packages(install_type: str) -> None:
     if pacman_file.exists():
         packages = [p.strip() for p in pacman_file.read_text().splitlines() if p.strip()]
         info(f"Installing {len(packages)} packages via pacman...")
-        run_sudo(["pacman", "-S", "--needed", "--noconfirm"] + packages)
-        ok(f"{len(packages)} pacman packages installed")
+        result = run_sudo(
+            ["pacman", "-S", "--needed", "--noconfirm"] + packages,
+            check=False,
+        )
+        if result.returncode != 0:
+            warn("Some pacman packages failed to install. Trying one by one...")
+            failed = []
+            for pkg in packages:
+                r = run_sudo(
+                    ["pacman", "-S", "--needed", "--noconfirm", pkg],
+                    check=False,
+                )
+                if r.returncode != 0:
+                    failed.append(pkg)
+            if failed:
+                warn(f"Failed to install: {', '.join(failed)}")
+            else:
+                ok(f"{len(packages)} pacman packages installed")
+        else:
+            ok(f"{len(packages)} pacman packages installed")
     else:
         warn(f"Package file not found: {pacman_file}")
 
@@ -202,24 +228,42 @@ def step_install_packages(install_type: str) -> None:
     if aur_file.exists():
         aur_packages = [p.strip() for p in aur_file.read_text().splitlines() if p.strip()]
         info(f"Installing {len(aur_packages)} AUR packages via yay...")
-        run(["yay", "-S", "--needed", "--noconfirm"] + aur_packages)
-        ok(f"{len(aur_packages)} AUR packages installed")
+        result = run(
+            ["yay", "-S", "--needed", "--noconfirm"] + aur_packages,
+            check=False,
+        )
+        if result.returncode != 0:
+            warn("Some AUR packages failed to install. Trying one by one...")
+            failed = []
+            for pkg in aur_packages:
+                r = run(
+                    ["yay", "-S", "--needed", "--noconfirm", pkg],
+                    check=False,
+                )
+                if r.returncode != 0:
+                    failed.append(pkg)
+            if failed:
+                warn(f"Failed to install: {', '.join(failed)}")
+            else:
+                ok(f"{len(aur_packages)} AUR packages installed")
+        else:
+            ok(f"{len(aur_packages)} AUR packages installed")
     else:
         warn(f"AUR file not found: {aur_file}")
 
 
-# ── Step 5: Clone repository ────────────────────────────────────────────────────────
+# ── Step 3: Clone repository ────────────────────────────────────────────────────────
 def step_clone_repo() -> None:
-    header("Step 5: Clone repository")
+    header("Step 3: Clone repository")
 
     info(f"Cloning {REPO_URL} (branch {REPO_BRANCH})...")
     run(["git", "clone", "--branch", REPO_BRANCH, REPO_URL, str(INSTALL_DIR)])
     ok(f"Repository cloned to {INSTALL_DIR}")
 
 
-# ── Step 6: Copy configs ────────────────────────────────────────────────────────────
+# ── Step 5: Copy configs ────────────────────────────────────────────────────────────
 def step_copy_configs() -> None:
-    header("Step 6: Copy configs")
+    header("Step 5: Copy configs")
 
     # .config directories
     src_config = INSTALL_DIR / ".config"
@@ -243,9 +287,9 @@ def step_copy_configs() -> None:
             ok(name)
 
 
-# ── Step 7: Copy wallpapers ─────────────────────────────────────────────────────────
+# ── Step 6: Copy wallpapers ─────────────────────────────────────────────────────────
 def step_copy_wallpapers() -> None:
-    header("Step 7: Wallpapers")
+    header("Step 6: Wallpapers")
 
     src_wallpapers = INSTALL_DIR / "Pictures" / "Wallpapers"
     if not src_wallpapers.exists():
@@ -261,9 +305,9 @@ def step_copy_wallpapers() -> None:
     ok(f"{count} wallpapers copied → ~/Pictures/Wallpapers/")
 
 
-# ── Step 8: Setup Voxtype ───────────────────────────────────────────────────────────
+# ── Step 7: Setup Voxtype ───────────────────────────────────────────────────────────
 def step_setup_voxtype() -> None:
-    header("Step 8: Voxtype (voice input)")
+    header("Step 7: Voxtype (voice input)")
 
     if not command_exists("voxtype"):
         warn("voxtype is not installed. Skipping setup.")
@@ -346,9 +390,9 @@ def step_setup_voxtype() -> None:
     info("Config: ~/.config/voxtype/config.toml")
 
 
-# ── Step 9: Setup SSH for GitHub ────────────────────────────────────────────────────
+# ── Step 8: Setup SSH for GitHub ────────────────────────────────────────────────────
 def step_setup_ssh() -> None:
-    header("Step 9: SSH for GitHub")
+    header("Step 8: SSH for GitHub")
 
     ssh_key = HOME / ".ssh" / "id_ed25519"
     pub_key = HOME / ".ssh" / "id_ed25519.pub"
@@ -395,9 +439,9 @@ def step_setup_ssh() -> None:
             info("Check manually: ssh -T git@github.com")
 
 
-# ── Step 10: Setup Zsh ──────────────────────────────────────────────────────────────
+# ── Step 9: Setup Zsh ───────────────────────────────────────────────────────────────
 def step_setup_zsh() -> None:
-    header("Step 10: Setup Zsh")
+    header("Step 9: Setup Zsh")
 
     upgrade_zsh = INSTALL_DIR / "upgrade_zsh.py"
     if not upgrade_zsh.exists():
@@ -455,16 +499,16 @@ def main() -> None:
         sys.exit(0)
 
     try:
-        step_check()
-        step_install_yay()
-        install_type = step_choose_install_type()
-        step_clone_repo()
-        step_install_packages(install_type)
-        step_copy_configs()
-        step_copy_wallpapers()
-        step_setup_voxtype()
-        step_setup_ssh()
-        step_setup_zsh()
+        step_check()          # Step 0
+        step_install_yay()     # Step 1
+        install_type = step_choose_install_type()  # Step 2
+        step_clone_repo()      # Step 3
+        step_install_packages(install_type)  # Step 4
+        step_copy_configs()    # Step 5
+        step_copy_wallpapers() # Step 6
+        step_setup_voxtype()   # Step 7
+        step_setup_ssh()       # Step 8
+        step_setup_zsh()       # Step 9
         step_finish()
     except KeyboardInterrupt:
         print(f"\n\n  {YELLOW}Installation interrupted by user.{RESET}\n")
