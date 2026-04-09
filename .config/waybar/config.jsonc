@@ -24,7 +24,7 @@
     ],
     "modules-right": [
         // "custom/l_end",
-        // "tray",
+        "tray",
         // "custom/r_end",
         "custom/l_end",
         "network",

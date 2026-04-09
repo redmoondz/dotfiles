@@ -94,24 +94,15 @@ python3 sync_configs.py --no-push    # sync without pushing
 
 | ![Waybar + Power Menu](./assets/waybar-power_menu.jpg) |
 | :----------------------------------------------------: |
-| _Waybar и меню питания (lock / sleep / logout / reboot / shutdown)_ |
+| _Waybar and power menu (lock / sleep / logout / reboot / shutdown)_ |
 
 | ![Alacritty + Rofi App Launcher](./assets/alacritty-rofi.jpg) |
 | :-----------------------------------------------------------: |
-| _Alacritty с fastfetch и Rofi лаунчер приложений_ |
+| _Alacritty with fastfetch and Rofi app launcher_ |
 
 | ![Rofi File Explorer + Spotify (floating)](./assets/exporere_rofi-floating_spotify.jpg) |
 | :-------------------------------------------------------------------------------------: |
-| _Rofi файловый менеджер, Spotify в floating-режиме и fastfetch_ |
-
-| ![waybar-nvim-rofi-alacritty.jpg](./assets/waybar-nvim-rofi-alacritty.jpg) |
-| :-----------------------------------------------: |
-| _waybar nvim rofi alacritty.jpg_ |
-
-| ![floating-spotify-alacritty.jpg](./assets/floating-spotify-alacritty.jpg) |
-| :------------------------------------------: |
-| _Floating spotify alacritty.jpg_ |
-
+| _Rofi file manager, Spotify in floating mode and fastfetch_ |
 
 
 ## Dotfiles are available for the following:

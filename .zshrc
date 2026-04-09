@@ -84,3 +84,4 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/home/rdmoon/.lmstudio/bin"
 # End of LM Studio CLI section
 
+alias cpl='copilot'

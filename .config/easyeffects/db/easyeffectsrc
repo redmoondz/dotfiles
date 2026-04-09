@@ -1,19 +1,21 @@
 [Presets]
-lastLoadedOutputPreset=Perfect EQ
+lastLoadedOutputPreset=Bass Enhancing + Perfect EQ - Low Latency
 
 [StreamInputs]
 inputDevice=alsa_input.usb-MV-SILICON_fifine_Microphone_20190808-00.mono-fallback
 
 [StreamOutputs]
-mostUsedPresets=Perfect EQ,Advanced Auto Gain,Loudness+Autogain,Bass Boosted,Bass Enhancing + Perfect EQ
-outputDevice=alsa_output.usb-Shanling_Shanling_UA_Mini_5000000001-01.analog-stereo
-plugins=equalizer#0
-usedPresets=Perfect EQ:11,Bass Enhancing + Perfect EQ:4,Bass Boosted:4,Loudness+Autogain:4,Advanced Auto Gain:6,Boosted:2,Laptop:2
+mostUsedPresets=Perfect EQ,Advanced Auto Gain,Bass Boosted,Bass Enhancing + Perfect EQ,Loudness+Autogain
+outputDevice=auto_null
+plugins=equalizer#0,convolver#0,limiter#0
+usedPresets=Perfect EQ:15,Bass Enhancing + Perfect EQ:6,Bass Boosted:6,Loudness+Autogain:5,Advanced Auto Gain:6,Boosted:2,Laptop:2,Bass Enhancing + Perfect EQ - Low Latency:4
 visiblePlugin=equalizer#0
 
 [Window]
 autostartOnLogin=true
-height=1022
+height=1014
 noWindowAfterStarting=true
 outputAutoloadingFallbackPreset=Advanced Auto Gain
-width=1908
+visiblePage=pwPage
+visiblePresetSheetPage=communityPage
+width=948
