@@ -44,3 +44,19 @@ mods = "Control"
 action = "ReceiveChar"
 key = "C"
 mods = "Control|Shift"
+
+# Cyrillic layout (RU/UA) — same physical keys as C and V
+[[keyboard.bindings]]
+action = "Copy"
+key = "С"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "М"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ReceiveChar"
+key = "С"
+mods = "Control|Shift"
