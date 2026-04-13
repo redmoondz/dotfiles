@@ -1,0 +1,22 @@
+
+# --- window.conf ---
+# █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀█ █░█ █░░ █▀▀ █▀
+# ▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀   █▀▄ █▄█ █▄▄ ██▄ ▄█
+
+# See https://wiki.hyprland.org/Configuring/Window-Rules/
+
+# '$&' is a hyde specific shorthand for "override" \\ analogous to a reference
+# This symbol indicates that the following values will override the default configuration
+$&=override
+
+# Keybindings overlay — must come before the catch-all opacity rule
+windowrulev2 = float,           class:com.hypr.keybindsviewer
+windowrulev2 = center,          class:com.hypr.keybindsviewer
+windowrulev2 = size 1100 660,   class:com.hypr.keybindsviewer
+windowrulev2 = pin,             class:com.hypr.keybindsviewer
+windowrulev2 = nofocus,         class:com.hypr.keybindsviewer
+windowrulev2 = noborder,        class:com.hypr.keybindsviewer
+windowrulev2 = rounding 12,     class:com.hypr.keybindsviewer
+windowrulev2 = opacity 1.0 1.0, class:com.hypr.keybindsviewer
+
+windowrule = opacity 0.95 0.80, class:^.*$

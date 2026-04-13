@@ -6,14 +6,21 @@
 # Configuration for the dwindle tiling layout
 
 dwindle {
+    # Master switch for pseudotiling
+    pseudotile = true
+    
     # Preserve split ratio when moving windows
     preserve_split = true
-
+    
+    # Split direction behavior
+    # 0 = cursor position, 1 = always left/top, 2 = always right/bottom
+    force_split = 0
+    
     # Smart splitting based on cursor position
     smart_split = false
-
-    # Disable smart resizing for consistent behavior
-    smart_resizing = false
+    
+    # Smart resizing based on cursor position
+    smart_resizing = true
 }
 
 
