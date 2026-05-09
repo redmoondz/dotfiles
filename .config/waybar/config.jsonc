@@ -19,7 +19,8 @@
         "custom/l_end",
         "cpu",
         "memory",
-        "custom/gpuvram",
+        // For Desktop with NVIDIA
+        // "custom/gpuvram",
         "custom/r_end"
     ],
     "modules-right": [
@@ -32,12 +33,13 @@
         "pulseaudio",
         "custom/voxtype",
         "custom/r_end",
-        // for laptop: "custom/l_end","battery","backlight","custom/r_end",
+
+        // for laptop: 
+        "custom/l_end","battery","backlight","custom/r_end",
+
         "custom/l_end",
         "custom/theme-toggle",
         "custom/weather",
-        "custom/r_end",
-        "custom/l_end",
         "clock",
         "custom/r_end"
     ],

@@ -1,48 +1,48 @@
-# Graphite Mono — monochrome dark
+# Wall-Dcol — warm dark palette
 [colors.primary]
-background = "#1a1a1a"
-foreground = "#d9d9d9"
+background = "#1b1e25"
+foreground = "#ebddbc"
 
 [colors.cursor]
-cursor = "#d9d9d9"
-text = "#1a1a1a"
+cursor = "#dec386"
+text = "#1b1e25"
 
 [colors.selection]
-background = "#d9d9d9"
-text = "#1a1a1a"
+background = "#dec386"
+text = "#1b1e25"
 
 [colors.search.matches]
-background = "#595959"
-foreground = "#d9d9d9"
+background = "#2b2f38"
+foreground = "#ebddbc"
 
 [colors.search.focused_match]
-background = "#a6a6a6"
-foreground = "#1a1a1a"
+background = "#dec386"
+foreground = "#1b1e25"
 
 [colors.hints.start]
-background = "#8c8c8c"
-foreground = "#1a1a1a"
+background = "#dec386"
+foreground = "#1b1e25"
 
 [colors.hints.end]
-background = "#595959"
-foreground = "#d9d9d9"
+background = "#83a6bf"
+foreground = "#1b1e25"
 
 [colors.normal]
-black = "#262626"
-red = "#b35959"
-green = "#7a997a"
-yellow = "#b3a46e"
-blue = "#7a8c99"
-magenta = "#997a99"
-cyan = "#7a9994"
-white = "#b3b3b3"
+black = "#242830"
+red = "#cc7788"
+green = "#8aab7f"
+yellow = "#dec386"
+blue = "#83a6bf"
+magenta = "#b28999"
+cyan = "#7fbba8"
+white = "#d5cbb5"
 
 [colors.bright]
-black = "#595959"
-red = "#cc7a7a"
-green = "#99b399"
-yellow = "#ccbb88"
-blue = "#99aabb"
-magenta = "#b399b3"
-cyan = "#99b3ad"
-white = "#d9d9d9"
+black = "#6e6a86"
+red = "#eab2c2"
+green = "#a4c49a"
+yellow = "#edd9a0"
+blue = "#9dbdd4"
+magenta = "#d5a5aa"
+cyan = "#99d1b8"
+white = "#ebddbc"

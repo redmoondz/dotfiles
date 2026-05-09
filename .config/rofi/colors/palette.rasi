@@ -1,11 +1,11 @@
-/* Graphite Mono */
+/* Wall-Dcol — warm dark */
 * {
-    background:     #1a1a1aFF;
-    background-alt: #262626FF;
-    foreground:     #d9d9d9FF;
-    selected:       #d9d9d9FF;
-    active:         #8c8c8cFF;
-    urgent:         #a6a6a6FF;
-    border:         #333333FF;
-    border-alt:     #d9d9d9FF;
+    background:     #1b1e25FF;
+    background-alt: #242830FF;
+    foreground:     #ebddbcFF;
+    selected:       #DEC386FF;
+    active:         #83A6BFFF;
+    urgent:         #EAB2C2FF;
+    border:         #2b2f38FF;
+    border-alt:     #DEC386FF;
 }
